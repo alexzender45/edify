@@ -1,0 +1,109 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "userId": "@chibuezepaul",
+            "postId": "23456sxdfasdtuhdzrw3yye9otgmW",
+            "comment": "nice read fam!",
+            "attachmentName": "thumb up",
+            "attachmentURI": "https://drive.google.com/file/d/185PiKxpfQVUU-BFY277b2F2u-AVWGzK_/view",
+            "attachmentMediaType": "png",
+            "attachmentSize": "2mb"
+        }
+    ],
+    "required": [
+        "userId",
+        "postId",
+        "comment"
+    ],
+    "properties": {
+        "userId": {
+            "default": "",
+            "description": "user id that made the comment.",
+            "examples": [
+                "@chibuezepaul"
+            ],
+            "title": "User that made a comment"
+        },
+        "postId": {
+            "default": "",
+            "description": "the id of the post that has this comment",
+            "examples": [
+                "2345q30ei4rjfdutb3590"
+            ],
+            "title": "the post where a comment was made"
+        },
+        "comment": {
+            "default": "",
+            "description": "feedback left on a post.",
+            "examples": [
+                "nice read fam!"
+            ],
+            "title": "The actual content of the comment"
+        },
+        "attachmentName": {
+            "type": "string",
+            "title": "The name of any attachment uploaded with this comment",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "God is love"
+            ]
+        },
+        "attachmentURI": {
+            "type": "string",
+            "title": "The url to access any attachment uploaded with this c",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://drive.google.com/file/d/185PiKxpfQVUU-BFY277b2F2u-AVWGzK_/view"
+            ]
+        },
+        "attachmentMediaType": {
+            "type": "string",
+            "title": "The type of any attachment uploaded with this comment",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "jpg"
+            ]
+        },
+        "attachmentSize": {
+            "type": "string",
+            "title": "The size of any attachment uploaded with this comment",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2mb"
+            ]
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": true,
+            "description": "An explanation about the purpose of this instance.",
+            "title": "The active status schema"
+        },
+        "reactions": {
+            "type": "array",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                {
+                    "reactionType": "negative",
+                    "userId": "12345tyudtxcdfzddtyuiyjsrtq3456"
+                }
+            ],
+            "title": "Users reactions to this comment"
+        },
+        "createdAt": {
+            "description": "An explanation about the purpose of this instance.",
+            "title": "The date the comment was created schema"
+        }
+    },
+    "additionalProperties": true
+}

@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "offenderId": "604608f8775fd241dccd69b7",
+            "title": "This content is offensive",
+            "content": "It violates community rules because it is blah blah blah"
+        }
+    ],
+    "required": [
+        "offenderId",
+        "title",
+        "content"
+    ],
+    "properties": {
+        "offenderId": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "23456sxdfasdtuhdzrw3yye9otgmW"
+            ],
+            "title": "The Id Number of the user/post/comment"
+        },
+        "title": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "This User is a Scammer"
+            ],
+            "title": "The main reason for reporting the issue"
+        },
+        "content": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "This user impersonates @alexzender45"
+            ],
+            "title": "The actual details that justify the report"
+        }
+    },
+    "additionalProperties": true
+}

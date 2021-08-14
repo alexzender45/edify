@@ -1,0 +1,109 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "sourceId": "23456sxdfasdtuhdzrw3yye9otgmW",
+            "title": "First Post",
+            "description": "Content of My First Post",
+            "attachmentName": "god is love",
+            "attachmentURI": "https://drive.google.com/file/d/185PiKxpfQVUU-BFY277b2F2u-AVWGzK_/view",
+            "attachmentMediaType": "jpg",
+            "attachmentSize": "2mb"
+        }
+    ],
+    "required": [
+        "sourceId",
+        "title",
+        "description"
+    ],
+    "properties": {
+        "sourceId": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "23456sxdfasdtuhdzrw3yye9otgmW"
+            ],
+            "title": "The platform where this post was published. Either a Page or a Channel"
+        },
+        "title": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "God is love"
+            ],
+            "title": "The title of the post"
+        },
+        "description": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "God is love. Love is God. You can't have love and not have God or vice versa"
+            ],
+            "title": "The actual details of the post"
+        },
+        "attachmentName": {
+            "type": "string",
+            "title": "The name of any attachment uploaded with this post",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "God is love"
+            ]
+        },
+        "attachmentURI": {
+            "type": "string",
+            "title": "The url to access any attachment uploaded with this post",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://drive.google.com/file/d/185PiKxpfQVUU-BFY277b2F2u-AVWGzK_/view"
+            ]
+        },
+        "attachmentMediaType": {
+            "type": "string",
+            "title": "The type of any attachment uploaded with this post",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "jpg"
+            ]
+        },
+        "attachmentSize": {
+            "type": "string",
+            "title": "The size of any attachment uploaded with this post",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2mb"
+            ]
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": true,
+            "description": "An explanation about the purpose of this instance.",
+            "title": "The active status schema"
+        },
+        "reactions": {
+            "type": "array",
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                {
+                    "reactionType": "negative",
+                    "userId": "12345tyudtxcdfzddtyuiyjsrtq3456"
+                }
+            ],
+            "title": "Users reactions to this post"
+        },
+        "createdAt": {
+            "description": "An explanation about the purpose of this instance.",
+            "title": "The date the post was created schema"
+        }
+    },
+    "additionalProperties": true
+}

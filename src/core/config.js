@@ -1,0 +1,25 @@
+require('dotenv').config();
+
+module.exports = {
+  MONGODB_URI: process.env.MONGODB_URI,
+  MONGODB_TEST_URI: process.env.MONGODB_TEST_URI,
+  JWT_SECRETE_KEY: process.env.JWT_SECRETE_KEY,
+  PORT: process.env.PORT || 4000,
+  TOKEN_DURATION: process.env.TOKEN_DURATION || '720hrs',
+  AWS_ACCESS_KEY: process.env.AWS_ACCESS_KEY,
+  AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY,
+  AWS_REGION: process.env.AWS_REGION,
+  S3_BUCKET: process.env.S3_BUCKET,
+  UPLOAD_TIMEOUT: process.env.UPLOAD_TIMEOUT,
+  CONNECTION_TIMEOUT: process.env.CONNECTION_TIMEOUT,
+  FILE_SIZE: process.env.FILE_SIZE,
+  DEFAULT_IMAGE_URL: process.env.DEFAULT_IMAGE_URL,
+  EMAIL_SENDER: process.env.EMAIL_SENDER,
+  ENDPOINT: process.env.ENDPOINT,
+  MAILGUN_APIKEY: process.env.MAILGUN_APIKEY,
+  MAILGUN_DOMAIN: process.env.MAILGUN_DOMAIN,
+  OTP_SECRET:process.env.OTP_SECRET,
+  POST_SIZE_LIMIT: process.env.POST_SIZE_LIMIT,
+  COMMENT_SIZE_LIMIT: process.env.COMMENT_SIZE_LIMIT,
+  CONFIRM_REACTIVATE: process.env.CONFIRM_REACTIVATE
+};

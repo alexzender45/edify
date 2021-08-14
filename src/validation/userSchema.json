@@ -1,0 +1,117 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "lastName": "Temitope",
+            "firstName": "Daniel",
+            "userName": "hhdsgsdvgjlcjxhudhdshdsjhdsuhudkhdsds",
+            "email": "email@yahoo.com",
+            "phoneNumber": "08080808080",
+            "address": "hhdsgsdvgjlcjxhudhdshdsjhdsuhudkhdsds",
+            "state": "hhdsgsdvgjlcjxhudhdshdsjhdsuhudkhdsds",
+            "country": "hhdsgsdvgjlcjxhudhdshdsjhdsuhudkhdsds",
+            "password": "hhdsgsdvgjlcjxhudhdshdsjhdsuhudkhdsds"
+        }
+    ],
+    "required": [
+        "lastName",
+        "firstName",
+        "userName",
+        "email",
+        "phoneNumber",
+        "address",
+        "state",
+        "country",
+        "password"
+    ],
+    "properties": {
+        "lastName": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Temitope"
+            ],
+            "title": "The firstname schema",
+            "minLength": 3
+        },
+        "firstName": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Daniel"
+            ],
+            "title": "The lastname schema",
+            "minLength": 3
+        },
+        "userName": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Daniel"
+            ],
+            "title": "The lastname schema",
+            "minLength": 3
+        },
+        "email": {
+            "$id": "#/properties/email",
+            "type": "string",
+            "title": "The email schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "tobasanmi@yahoo.com"
+            ]
+        },
+        "phoneNumber": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "08080808080"
+            ],
+            "title": "The comment schema",
+            "minLength": 6
+        },
+        "address": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                " hhfghhh uffyf ufhhuffhhffuf"
+            ],
+            "title": "The comment schema",
+            "minLength": 5
+        },
+        "state": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Lagos"
+            ],
+            "title": "The comment schema",
+            "minLength": 5
+        },
+        "country": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Nigeria"
+            ],
+            "title": "The comment schema",
+            "minLength": 3
+        },
+        "password": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "ilovetocode"
+            ],
+            "title": "The comment schema",
+            "minLength": 8
+        }
+    },
+    "additionalProperties": true
+}

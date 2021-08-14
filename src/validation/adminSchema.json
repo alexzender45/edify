@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "lastName": "Temitope",
+            "firstName": "Daniel",
+            "email": "email@yahoo.com",
+            "role": "super"
+        }
+    ],
+    "required": [
+        "lastName",
+        "firstName",
+        "email",
+        "role"
+    ],
+    "properties": {
+        "lastName": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Temitope"
+            ],
+            "title": "The firstname schema",
+            "minLength": 3
+        },
+        "firstName": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "Daniel"
+            ],
+            "title": "The lastname schema",
+            "minLength": 3
+        },
+        "email": {
+            "$id": "#/properties/email",
+            "type": "string",
+            "title": "The email schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "tobasanmi@yahoo.com"
+            ]
+        },
+        "role": {
+            "default": "",
+            "description": "An explanation about the purpose of this instance.",
+            "examples": [
+                "super"
+            ],
+            "title": "The comment schema",
+            "minLength": 4
+        }
+    },
+    "additionalProperties": true
+}
